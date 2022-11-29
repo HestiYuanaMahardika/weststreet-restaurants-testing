@@ -1,0 +1,155 @@
+@media screen and (min-width: 650px) {
+    .app-bar {
+      grid-template-columns: 1fr auto;
+      padding: 8px 32px;
+    }
+   
+    .app-bar .app-bar__brand h1 {
+      font-size: 1.5em;
+    }
+   
+    .app-bar .app-bar__menu {
+      display: none;
+    }
+   
+    .app-bar .app-bar__navigation {
+      position: static;
+      width: 100%;
+    }
+   
+    .app-bar .app-bar__navigation ul li {
+      display: inline-block;
+    }
+   
+    .app-bar .app-bar__navigation ul li a {
+      display: inline-block;
+      width: 120px;
+      text-align: center;
+      margin: 0;
+    }
+   
+    .restaurants {
+      grid-template-columns: 1fr 1fr;
+    }
+   
+    .restaurant {
+      grid-template-columns: auto 1fr;
+    }
+   
+    .restaurant .restaurant__title {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+   
+    .restaurant .restaurant__overview {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    .hero {
+      background: url('../public/images/heros/image-large.jpg');
+    }
+  }
+   
+  /* @media only screen and (max-width: 480px) {
+    .hero {
+      background: url('../images/heros/image-small.jpg');
+    }
+  } */
+
+  @media only screen and (min-width: 432px) {
+    .restaurant__menu div>ul>ul {
+      columns: 3;
+    }
+  }
+
+  @media only screen and (min-width: 576px) {
+    .restaurant__menu div>ul>ul {
+      columns: 4;
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    .app-bar .app-bar__brand h1 {
+      font-size: 2em;
+    }
+    /* .hero {
+      background-image: url("../images/heros/image-large.jpg");
+    } */
+  }
+   
+  @media screen and (min-width: 850px) {
+    .restaurants {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+   
+  @media screen and (min-width: 1200px) {
+    .restaurants {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+   
+  @media screen and (min-width: 1600px) {
+    .restaurants {
+        grid-template-columns: repeat(5, 1fr);
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .restaurant__menu div {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 0 20px;
+    }
+  
+    .restaurant__menu,
+    .customer__resto {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  
+    .restaurant__menu div>ul>ul {
+      columns: 2;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+    .restaurant__menu div>ul>ul {
+      columns: 3;
+    }
+  }
+
+  @media screen and (min-width: 576px){
+    .provide-center{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .provide{
+        flex: 0 0 calc(50% - 16px);
+    }
+  }
+  @media screen and (min-width:972px){
+    .provide{
+        flex: 0 0 calc(33.3% - 16px);
+    }
+  }
+
+  @media screen and (min-width: 576px){
+    .restaurant__menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .restaurant__menu{
+        flex: 0 0 calc(50% - 16px);
+    }
+  }
+  @media screen and (min-width:972px){
+    .restaurant__menu{
+        flex: 0 0 calc(33.3% - 16px);
+    }
+  }
